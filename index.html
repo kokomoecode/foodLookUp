@@ -4,9 +4,9 @@
   	<meta charset="utf-8">
   	<meta name="description" content="Your description goes here">
   	<meta name="keywords" content="one, two, three">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Vegetarian Checker</title>
+		<title>Blank Template</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
@@ -14,26 +14,27 @@
 	</head>
 	<body>
 
-		<h1>IS IT VEGETARIAN?</h1>
-		<label for="barcode">Enter A UPC barcode number (12 digits)</label>
-		<input type="number" id="barcode">
+		<img class="cowimg" src="/cow.webp">
+		<h1>Vegetarian Checker</h1>
+		<h5>Enter 12 digits UPC barcode below to see if the ingredients in your food is vegetarian!</h5>
+		
+		<input type="number" id="barcode" name="barcode" min="5" max="14">
 		<button type="button" onclick="getFetch();">Get Value</button>
-
-		<img id="product-image" src="">
-		<h2 id="product-name"></h2>
-		<table id="ingredient-table">
-			<tr>
-				<th>Ingredient</th>
-				<th>Vegetarian?</th>
-			</tr>
-		</table>
-
-		<!-- <table id="calories-table">
-			<tr>
-				<th>Name</th>
-				<th>Calories</th>
-			</tr>
-		</table> -->
+		<section>
+			<div class="classOne">
+				<h2 id="product-name"></h2>
+				<img id= "product-img" src = ''>
+			</div>
+			<div class="classTwo">
+				<h2 id="tale-name"></h2>
+				<table id="ingredient-table">
+					<tr>
+					<th>Ingredient</th>
+					<th>Vegetarian?</th>
+					</tr>
+				</table>
+			</div>
+		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
